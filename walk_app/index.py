@@ -26,12 +26,6 @@ def increment_west(point):
 
     return new_point
 
-def get_walk_minutes(walk):
-
-    qtd_directions = len(walk)
-
-    return qtd_directions
-
 def increment(point, direction):
 
     north = increment_north
@@ -50,9 +44,7 @@ def increment(point, direction):
 
 def is_valid_walk(walk):
     
-    qtd_minutes = get_walk_minutes(walk)
-
-    print(qtd_minutes)
+    qtd_minutes = len(walk)
 
     if qtd_minutes != 10:
         return False
