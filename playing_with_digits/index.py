@@ -10,7 +10,6 @@ def couldBeInt(number):
     
     return bool(re.search('\.0$', str(number)))
 
-
 def dig_pow(n, p):
     
     digits = convert_to_tuple(n)
